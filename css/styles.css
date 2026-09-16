@@ -223,10 +223,12 @@ section[id] {
 
 .brand small {
   display: block;
+  max-width: 16rem;
   font-family: var(--mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-size: 0.58rem;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-transform: none;
   color: var(--sage);
 }
 

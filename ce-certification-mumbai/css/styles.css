@@ -1456,6 +1456,12 @@ fieldset {
     background-position: center;
   }
 
+  .city-mumbai .hero {
+    background-image: url("../assets/hero-bg-desktop.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
   .header-cta {
     display: inline-flex;
   }

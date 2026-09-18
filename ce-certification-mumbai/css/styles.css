@@ -1810,13 +1810,15 @@ fieldset {
 }
 
 /* Mumbai layout accents — same green palette & dark/light rhythm as Chennai */
-.city-mumbai .hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background: rgba(6, 26, 18, 0.22);
+@media (max-width: 767px) {
+  .city-mumbai .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: rgba(6, 26, 18, 0.22);
+  }
 }
 
 .city-mumbai .lede-secondary {

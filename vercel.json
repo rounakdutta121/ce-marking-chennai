@@ -1,3 +1,10 @@
 {
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/ce-certification-mumbai",
+      "destination": "/ce-certification-mumbai/",
+      "permanent": true
+    }
+  ]
 }

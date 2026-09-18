@@ -59,6 +59,7 @@
 
     const body = {
       eventType,
+      siteLabel: String(webappConfig.siteLabel || "").trim() || undefined,
       attribution: readAttribution(),
       meta: requestMeta(),
       ...extra

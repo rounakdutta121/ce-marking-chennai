@@ -109,7 +109,7 @@
   const products = {
     machinery: {
       tab: "tab-machinery",
-      image: "assets/machinery-detail.jpg",
+      image: "/ce-certification-mumbai/assets/machinery-detail.jpg",
       alt: "Close-up of industrial production machinery.",
       kicker: "Machinery & industrial equipment",
       heading: "CE marking support for industrial systems",
@@ -126,7 +126,7 @@
     },
     electrical: {
       tab: "tab-electrical",
-      image: "assets/electronics-detail.jpg",
+      image: "/ce-certification-mumbai/assets/electronics-detail.jpg",
       alt: "Industrial electrical control panel and electronics close-up.",
       kicker: "Electrical & electronic equipment",
       heading: "Electrical safety, EMC and related European rules",
@@ -143,7 +143,7 @@
     },
     medical: {
       tab: "tab-medical",
-      image: "assets/medical-equipment.jpg",
+      image: "/ce-certification-mumbai/assets/medical-equipment.jpg",
       alt: "Laboratory medical diagnostic equipment.",
       kicker: "Medical devices & IVD products",
       heading: "Regulatory pathway support for applicable medical products",
@@ -160,7 +160,7 @@
     },
     pressure: {
       tab: "tab-pressure",
-      image: "assets/pressure-equipment.jpg",
+      image: "/ce-certification-mumbai/assets/pressure-equipment.jpg",
       alt: "Industrial pressure vessels and piping.",
       kicker: "Pressure equipment",
       heading: "CE marking support for applicable pressure products",
@@ -177,7 +177,7 @@
     },
     ppe: {
       tab: "tab-ppe",
-      image: "assets/technical-file.jpg",
+      image: "/ce-certification-mumbai/assets/technical-file.jpg",
       alt: "Technical documentation used to evidence product conformity.",
       kicker: "Personal protective equipment",
       heading: "European PPE requirements, standards and assessment",
@@ -194,7 +194,7 @@
     },
     radio: {
       tab: "tab-radio",
-      image: "assets/electronics-detail.jpg",
+      image: "/ce-certification-mumbai/assets/electronics-detail.jpg",
       alt: "Connected electronic assemblies used in wireless and IoT products.",
       kicker: "Radio & wireless equipment",
       heading: "Compliance support for connected and radio products",
@@ -211,7 +211,7 @@
     },
     construction: {
       tab: "tab-construction",
-      image: "assets/mumbai-corridor.jpg",
+      image: "/ce-certification-mumbai/assets/mumbai-corridor.jpg",
       alt: "Industrial buildings across Mumbai’s manufacturing belt.",
       kicker: "Construction products",
       heading: "Performance documentation and conformity assessment",
@@ -228,7 +228,7 @@
     },
     other: {
       tab: "tab-other",
-      image: "assets/technical-file.jpg",
+      image: "/ce-certification-mumbai/assets/technical-file.jpg",
       alt: "Product assessment documents used for CE technical files.",
       kicker: "Other industrial products",
       heading: "Not sure which category fits?",

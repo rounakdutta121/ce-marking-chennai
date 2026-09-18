@@ -454,6 +454,8 @@
 
   const splitHeading = (node) => {
     if (!node || node.dataset.splitReady) return;
+    const accent = node.querySelector(".hero-city");
+    const accentWord = accent ? accent.textContent.trim() : "";
     const textValue = node.textContent.trim();
     node.dataset.splitReady = "true";
     const words = textValue.split(/\s+/);
@@ -461,7 +463,10 @@
     visual.setAttribute("aria-hidden", "true");
     visual.className = "split-visual";
     visual.innerHTML = words
-      .map((word) => `<span class="word"><span class="word-inner">${word}</span></span>`)
+      .map((word) => {
+        const cityClass = accentWord && word === accentWord ? " hero-city" : "";
+        return `<span class="word${cityClass}"><span class="word-inner">${word}</span></span>`;
+      })
       .join(" ");
     const accessible = document.createElement("span");
     accessible.className = "visually-hidden";

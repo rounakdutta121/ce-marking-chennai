@@ -314,7 +314,7 @@ section[id] {
   min-height: calc(100svh - var(--header));
   padding: clamp(2.4rem, 6vw, 4rem) var(--pad-x);
   background:
-    url("../assets/hero-bg-mobile.jpg") center top / cover no-repeat;
+    url("../assets/hero-bg-mobile.webp") center top / cover no-repeat;
   background-color: var(--ink);
   color: var(--paper);
 }
@@ -1452,12 +1452,12 @@ fieldset {
   }
 
   .hero {
-    background-image: url("../assets/hero-bg.jpg");
+    background-image: url("../assets/hero-bg.webp");
     background-position: center;
   }
 
   .city-mumbai .hero {
-    background-image: url("../assets/hero-bg-desktop.jpg");
+    background-image: url("../assets/hero-bg-desktop.webp");
     background-position: center center;
     background-size: cover;
   }
@@ -1837,7 +1837,9 @@ fieldset {
 }
 
 .city-mumbai .hero h1 .hero-city,
-.city-mumbai .hero h1 .hero-city .word-inner {
+.city-mumbai .hero h1 .hero-city .word-inner,
+.hero h1 .hero-city,
+.hero h1 .hero-city .word-inner {
   display: inline-block;
   color: var(--pine);
   font-size: 1.22em;

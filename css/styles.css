@@ -314,7 +314,7 @@ section[id] {
   min-height: calc(100svh - var(--header));
   padding: clamp(2.4rem, 6vw, 4rem) var(--pad-x);
   background:
-    url("../assets/hero-bg-mobile.jpg") center top / cover no-repeat;
+    url("../assets/hero-bg-mobile.webp") center top / cover no-repeat;
   background-color: var(--ink);
   color: var(--paper);
 }
@@ -1452,7 +1452,7 @@ fieldset {
   }
 
   .hero {
-    background-image: url("../assets/hero-bg.jpg");
+    background-image: url("../assets/hero-bg.webp");
     background-position: center;
   }
 
@@ -1807,4 +1807,21 @@ fieldset {
     width: auto;
     justify-content: center;
   }
+}
+
+.hero h1 .hero-city,
+.hero h1 .hero-city .word-inner {
+  display: inline-block;
+  color: var(--pine);
+  font-size: 1.22em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 0.92;
+  -webkit-text-stroke: 2px var(--lime);
+  paint-order: stroke fill;
+  text-shadow:
+    0 0 0 var(--lime),
+    0 0 18px rgba(212, 234, 120, 0.75),
+    0 0 36px rgba(212, 234, 120, 0.4),
+    0 2px 10px rgba(6, 26, 18, 0.9);
 }

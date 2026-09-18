@@ -109,7 +109,7 @@
   const products = {
     machinery: {
       tab: "tab-machinery",
-      image: "assets/machinery-detail.jpg",
+      image: "assets/machinery-detail.webp",
       alt: "Close-up of industrial production machinery.",
       kicker: "Machinery & industrial equipment",
       heading: "CE marking support for industrial systems",
@@ -126,7 +126,7 @@
     },
     electrical: {
       tab: "tab-electrical",
-      image: "assets/electronics-detail.jpg",
+      image: "assets/electronics-detail.webp",
       alt: "Electronic circuit boards and industrial control equipment on a workbench.",
       kicker: "Electrical & electronic equipment",
       heading: "Electrical safety, EMC and related European rules",
@@ -143,7 +143,7 @@
     },
     medical: {
       tab: "tab-medical",
-      image: "assets/medical-equipment.jpg",
+      image: "assets/medical-equipment.webp",
       alt: "Laboratory medical diagnostic equipment on a stainless steel table.",
       kicker: "Medical devices & IVD products",
       heading: "Regulatory pathway support for applicable medical products",
@@ -160,7 +160,7 @@
     },
     pressure: {
       tab: "tab-pressure",
-      image: "assets/pressure-equipment.jpg",
+      image: "assets/pressure-equipment.webp",
       alt: "Industrial pressure vessels, valves and piping in a plant room.",
       kicker: "Pressure equipment",
       heading: "CE marking support for applicable pressure products",
@@ -177,7 +177,7 @@
     },
     ppe: {
       tab: "tab-ppe",
-      image: "assets/technical-file.jpg",
+      image: "assets/technical-file.webp",
       alt: "Technical documentation used to evidence product conformity.",
       kicker: "Personal protective equipment",
       heading: "European PPE requirements, standards and assessment",
@@ -194,7 +194,7 @@
     },
     radio: {
       tab: "tab-radio",
-      image: "assets/electronics-detail.jpg",
+      image: "assets/electronics-detail.webp",
       alt: "Connected electronic assemblies used in wireless and IoT products.",
       kicker: "Radio & wireless equipment",
       heading: "Compliance support for connected and radio products",
@@ -211,7 +211,7 @@
     },
     construction: {
       tab: "tab-construction",
-      image: "assets/chennai-corridor.jpg",
+      image: "assets/chennai-corridor.webp",
       alt: "Industrial buildings and manufacturing roofs in a production corridor.",
       kicker: "Construction products",
       heading: "Performance documentation and conformity assessment",
@@ -228,7 +228,7 @@
     },
     toys: {
       tab: "tab-toys",
-      image: "assets/technical-file.jpg",
+      image: "assets/technical-file.webp",
       alt: "Product assessment documents used for safety and technical files.",
       kicker: "Toys & children's products",
       heading: "European toy-safety requirements and technical evidence",
@@ -453,6 +453,8 @@
 
   const splitHeading = (node) => {
     if (!node || node.dataset.splitReady) return;
+    const accent = node.querySelector(".hero-city");
+    const accentWord = accent ? accent.textContent.trim() : "";
     const textValue = node.textContent.trim();
     node.dataset.splitReady = "true";
     const words = textValue.split(/\s+/);
@@ -460,7 +462,10 @@
     visual.setAttribute("aria-hidden", "true");
     visual.className = "split-visual";
     visual.innerHTML = words
-      .map((word) => `<span class="word"><span class="word-inner">${word}</span></span>`)
+      .map((word) => {
+        const cityClass = accentWord && word === accentWord ? " hero-city" : "";
+        return `<span class="word${cityClass}"><span class="word-inner">${word}</span></span>`;
+      })
       .join(" ");
     const accessible = document.createElement("span");
     accessible.className = "visually-hidden";
